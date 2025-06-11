@@ -1,2 +1,2 @@
 #!/bin/bash
-f() { local x="Local variable" | echo "$x" | } | f
+f() { local BEST="School"| echo "$BEST"| }| f

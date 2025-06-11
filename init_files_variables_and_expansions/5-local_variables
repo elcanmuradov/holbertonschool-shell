@@ -1,2 +1,2 @@
 #!/bin/bash
-declare -p 2>/dev/null | sed 's/^declare .* //' | printenv | declare -F
+(set -o posix; set) > /dev/stdout

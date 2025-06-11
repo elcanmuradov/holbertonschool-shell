@@ -1,2 +1,2 @@
 #!/bin/bash
-{ declare -p| declare -F } | grep -v 'BASH_EXECUTION_STRING\|BASH_ARGV'
+declare -p 2>/dev/null | sed 's/^declare .* //' | printenv | declare -F
